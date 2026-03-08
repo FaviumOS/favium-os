@@ -1,41 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Favium OS</title>
-<style>
-body{
-background:black;
-color:white;
-font-family:Arial;
-text-align:center;
-padding:50px;
-}
-h1{
-font-size:60px;
-color:#00aaff;
-}
-button{
-background:#00aaff;
-border:none;
-padding:20px;
-font-size:20px;
-border-radius:10px;
-cursor:pointer;
-}
-</style>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favium OS</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
+    body{
+      font-family:Arial, sans-serif;
+      background:linear-gradient(180deg,#03060d,#08111f,#0b1730);
+      color:white;
+      text-align:center;
+    }
+
+    .hero{
+      padding:80px 20px 60px;
+    }
+
+    .logo{
+      width:120px;
+      border-radius:18px;
+      box-shadow:0 0 30px rgba(0,183,255,0.35);
+      margin-bottom:25px;
+    }
+
+    h1{
+      font-size:56px;
+      color:#18a8ff;
+      margin-bottom:15px;
+      text-shadow:0 0 20px rgba(24,168,255,0.35);
+    }
+
+    .subtitle{
+      font-size:22px;
+      color:#d8ebff;
+      max-width:800px;
+      margin:0 auto 14px;
+    }
+
+    .smalltext{
+      color:#a9c6e7;
+      font-size:18px;
+      margin-bottom:30px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:15px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-top:20px;
+    }
+
+    .btn{
+      text-decoration:none;
+      padding:15px 28px;
+      border-radius:12px;
+      font-size:18px;
+      font-weight:bold;
+      display:inline-block;
+      transition:0.2s;
+    }
+
+    .btn-primary{
+      background:#14a7ff;
+      color:white;
+      box-shadow:0 0 20px rgba(20,167,255,0.35);
+    }
+
+    .btn-secondary{
+      border:1px solid #14a7ff;
+      color:#14a7ff;
+      background:transparent;
+    }
+
+    .btn:hover{
+      transform:scale(1.04);
+    }
+
+    .section-title{
+      font-size:34px;
+      margin-bottom:30px;
+      color:#39b5ff;
+    }
+
+    .features{
+      max-width:1100px;
+      margin:0 auto;
+      padding:20px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:18px;
+      padding:25px;
+      text-align:left;
+      box-shadow:0 0 20px rgba(0,0,0,0.25);
+    }
+
+    .card h3{
+      color:#55c3ff;
+      margin-bottom:12px;
+      font-size:22px;
+    }
+
+    .card p{
+      color:#d4e8ff;
+      line-height:1.6;
+      font-size:16px;
+    }
+
+    .screenshots{
+      max-width:1100px;
+      margin:70px auto;
+      padding:0 20px;
+    }
+
+    .shot-box{
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:18px;
+      padding:20px;
+      color:#9bc8ec;
+    }
+
+    .download{
+      max-width:900px;
+      margin:70px auto;
+      padding:20px;
+    }
+
+    .download-box{
+      background:rgba(20,167,255,0.08);
+      border:1px solid rgba(20,167,255,0.2);
+      border-radius:20px;
+      padding:35px 20px;
+      box-shadow:0 0 25px rgba(20,167,255,0.12);
+    }
+
+    footer{
+      margin-top:70px;
+      padding:30px 20px 50px;
+      color:#88a9c9;
+      font-size:14px;
+    }
+  </style>
+</head>
 <body>
 
-<h1>Favium OS</h1>
+  <section class="hero">
+    <img src="logo.png" alt="Favium OS Logo" class="logo">
+    <h1>FAVIUM OS</h1>
+    <p class="subtitle">Gaming optimized Arch-based operating system built for speed, performance and daily use.</p>
+    <p class="smalltext">Maximum FPS • Clean System • No Bloat • Better Performance</p>
 
-<p>Gaming optimized Arch based operating system</p>
+    <div class="buttons">
+      <a href="#" class="btn btn-primary">Download Coming Soon</a>
+      <a href="#features" class="btn btn-secondary">See Features</a>
+    </div>
+  </section>
 
-<p>Maximum FPS • Clean System • No Bloat</p>
+  <section id="features">
+    <h2 class="section-title">Why Favium OS?</h2>
+    <div class="features">
+      <div class="card">
+        <h3>⚡ More FPS</h3>
+        <p>Favium OS is focused on cleaner performance, lighter background usage and gaming-ready optimization.</p>
+      </div>
 
-<br>
+      <div class="card">
+        <h3>🧠 Clean RAM</h3>
+        <p>Built-in tools like RAM cleaner and FPS boost help keep the system responsive and fast.</p>
+      </div>
 
-<button>Download Favium OS</button>
+      <div class="card">
+        <h3>🎮 Game Mode</h3>
+        <p>Gaming features are being built directly into the system to improve playability and reduce lag.</p>
+      </div>
+
+      <div class="card">
+        <h3>🚀 Arch Base</h3>
+        <p>Favium OS is based on Arch, giving it speed, control and a cleaner foundation than bloated systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="screenshots">
+    <h2 class="section-title">Screenshots</h2>
+    <div class="shot-box">
+      Favium OS screenshots coming soon.
+    </div>
+  </section>
+
+  <section class="download">
+    <div class="download-box">
+      <h2 class="section-title">Download Favium OS</h2>
+      <p class="smalltext">Favium OS is currently in development. Public release coming soon.</p>
+      <a href="#" class="btn btn-primary">Download ISO Soon</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Favium OS — Gaming optimized operating system.
+  </footer>
 
 </body>
 </html>
